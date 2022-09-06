@@ -1,0 +1,83 @@
+/* Write your CSS here */
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.showHideApp-bg-container {
+  height: 100vh;
+  background-image: linear-gradient(to right, #fa7257, #fc63a7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.showHideApp-heading {
+  color: #fff;
+  font-size: 40px;
+}
+
+.fullName-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+}
+
+.showHide-Name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-card {
+  height: 135px;
+  width: 240px;
+  background-color: #fddddb;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+.name {
+  font-size: 28px;
+}
+
+.showHide-lastName-btn,
+.showHide-firstName-btn {
+  height: 36px;
+  padding: 9px 18px;
+  border-width: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #dd1264;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+  .name-card {
+    height: 180px;
+    width: 300px;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fullName-container {
+    flex-direction: column;
+  }
+
+  .showHide-Name-container {
+    margin: 15px 0;
+  }
+}
